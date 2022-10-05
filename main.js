@@ -36,8 +36,8 @@ function todoDelete(e) {
 }
 
 function todoCount() {
-  let todoCounter = document.querySelectorAll(
+  let todoCounter = $(
     'input[type="checkbox"]:checked'
   ).length;
-  counter.innerHTML = todoCounter;
+  $("#counter").html(todoCounter);
 }
